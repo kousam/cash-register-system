@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.controlmatic.client.controller.AdminViewController">
+   <children>
+      <TabPane layoutX="-2.0" layoutY="-3.0" prefHeight="880.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Sales Panel">
+            <content>
+                <fx:include fx:id="salesPanelTab" source="SalePanelView.fxml" />
+            </content>
+          </Tab>
+            <Tab text="Sales Data">
+               <content>
+                   <fx:include fx:id="salesDataTab" source="SalesDataView.fxml" />
+               </content>
+            </Tab>
+          <Tab text="Marketing Panel">
+            <content>
+                <fx:include fx:id="MarketingTab" source="MarketingView.fxml" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,2 @@
+rootProject.name = 'project-pvp21-grupp-6'
+include 'shared', 'client', 'server'

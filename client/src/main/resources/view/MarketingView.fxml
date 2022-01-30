@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="859.0" prefWidth="927.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="org.controlmatic.client.controller.MarketingViewController">
+    <children>
+        <HBox layoutX="13.0" layoutY="4.0" prefHeight="511.0" prefWidth="703.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <VBox prefHeight="851.0" prefWidth="281.0">
+                    <children>
+                        <TextField fx:id="customerIDField" promptText="Search For Customer By ID" />
+                        <Button fx:id="searchButton" mnemonicParsing="false" onAction="#search" prefHeight="88.0" prefWidth="287.0" text="Search" />
+                        <TableView fx:id="searchResultsTable" prefHeight="236.0" prefWidth="252.0">
+                            <columns>
+                                <TableColumn fx:id="customerNameColumn" prefWidth="125.0" text="lastName" />
+                                <TableColumn fx:id="customerIDColumn" prefWidth="126.0" text="ID" />
+                            </columns>
+                        </TableView>
+                        <TableView fx:id="salesTable" prefHeight="502.0" prefWidth="252.0">
+                            <columns>
+                                <TableColumn fx:id="customerSaleIDColumn" prefWidth="75.0" text="Sale ID" />
+                                <TableColumn fx:id="customerSaleDateColumn" prefWidth="75.0" text="Date" />
+                                <TableColumn fx:id="customerSalePriceColumn" prefWidth="101.0" text="Total Price" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </VBox>
+                <VBox prefHeight="851.0" prefWidth="422.0">
+               <children>
+                  <Label fx:id="idLabel" prefHeight="33.0" prefWidth="369.0" text="Customer ID :">
+                     <VBox.margin>
+                        <Insets left="10.0" top="50.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="firstNameLabel" prefHeight="33.0" prefWidth="369.0" text="First Name :">
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="lastNameLabel" prefHeight="33.0" prefWidth="369.0" text="Last Name :">
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="dobLabel" prefHeight="33.0" prefWidth="369.0" text="Age : ">
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="sexLabel" prefHeight="33.0" prefWidth="369.0" text="Sex :">
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="addressLabel" prefHeight="33.0" prefWidth="369.0" text="Address : ">
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="bonusPointsLabel" prefHeight="33.0" prefWidth="369.0" text="Customer Bonus Points :">
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children></VBox>
+                <VBox prefHeight="851.0" prefWidth="383.0">
+                    <children>
+                        <TableView fx:id="productsTable" prefHeight="866.0" prefWidth="400.0">
+                            <columns>
+                                <TableColumn fx:id="saleProductNameColumn" prefWidth="200.0" text="Product" />
+                                <TableColumn fx:id="saleProductAmountColumn" prefWidth="200.0" text="Amount" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children></AnchorPane>

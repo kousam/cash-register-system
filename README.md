@@ -21,3 +21,11 @@ We use Gradle to manage dependencies and build the code. AdoptOpenJDK 16 (HotSpo
 - Clone the repository
 - `./gradlew build`
 - `./gradlew server:bootRun` or `./gradlew client:run` to run the server/client
+
+## Contributors
+- Dlindbla
+- crprl
+- kousam
+- halvnykterist
+- Szanne
+- theeVice
